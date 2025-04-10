@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORWADO - Empowering Rural Women</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="script.js" defer></script>
+    <script src="counter.js" defer></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Header will be loaded here -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main class="pt-16">
+        <!-- Hero Section -->
+        <section class="relative min-h-screen flex items-center overflow-hidden">
+            <!-- Background Slider -->
+            <div class="absolute inset-0">
+                <!-- Constant Green Gradient Overlay -->
+                <div class="absolute inset-0 bg-gradient-to-b from-green-900/90 via-green-800/85 to-green-700/90 z-10"></div>
+                <div class="absolute inset-0 hero-slider">
+                    <!-- First Slide - Women in Agriculture -->
+                    <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80')] bg-cover bg-center transition-opacity duration-1000 opacity-100"></div>
+                    <!-- Second Slide - Community Meeting -->
+                    <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1594498653385-d5172c532c00?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80')] bg-cover bg-center transition-opacity duration-1000 opacity-0"></div>
+                    <!-- Third Slide - Agricultural Training -->
+                    <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1595273670150-bd0c3c392e46?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80')] bg-cover bg-center transition-opacity duration-1000 opacity-0"></div>
+                </div>
+            </div>
+
+            <!-- Slider Controls -->
+            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2 z-20">
+                <button class="w-3 h-3 rounded-full bg-green-300/50 hover:bg-green-300 transition duration-300 slider-dot active"></button>
+                <button class="w-3 h-3 rounded-full bg-green-300/50 hover:bg-green-300 transition duration-300 slider-dot"></button>
+                <button class="w-3 h-3 rounded-full bg-green-300/50 hover:bg-green-300 transition duration-300 slider-dot"></button>
+            </div>
+
+            <!-- Content -->
+            <div class="container mx-auto px-4 relative z-10">
+                <div class="max-w-3xl mx-auto text-center" data-aos="fade-up">
+                    <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+                        <span class="bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-green-200">Empowering Rural Women</span>
+                        <br>
+                        <span class="text-white drop-shadow-lg">Through Sustainable Agribusiness</span>
+                    </h1>
+                    <p class="text-xl text-white mb-8 max-w-2xl mx-auto font-medium drop-shadow-md">
+                        Join us in our mission to transform rural communities through women-led agricultural development and economic empowerment.
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <a href="contact.html" class="bg-white text-green-700 px-8 py-3 rounded-full font-semibold hover:bg-green-50 transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                            Get Involved
+                        </a>
+                        <a href="donate.html" class="bg-green-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-green-500 transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                            Donate Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Stats Section -->
+                <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-center bg-green-900/40 backdrop-blur-sm p-6 rounded-lg border border-green-500/30">
+                        <div class="text-3xl md:text-4xl font-bold text-green-300 mb-2" data-counter data-start="0" data-end="5000" data-duration="2000">0</div>
+                        <p class="text-green-100 font-medium">Women Trained</p>
+                    </div>
+                    <div class="text-center bg-green-900/40 backdrop-blur-sm p-6 rounded-lg border border-green-500/30">
+                        <div class="text-3xl md:text-4xl font-bold text-green-300 mb-2" data-counter data-start="0" data-end="20" data-duration="2000">0</div>
+                        <p class="text-green-100 font-medium">Communities</p>
+                    </div>
+                    <div class="text-center bg-green-900/40 backdrop-blur-sm p-6 rounded-lg border border-green-500/30">
+                        <div class="text-3xl md:text-4xl font-bold text-green-300 mb-2" data-counter data-start="0" data-end="1000" data-duration="2000">0</div>
+                        <p class="text-green-100 font-medium">Businesses</p>
+                    </div>
+                    <div class="text-center bg-green-900/40 backdrop-blur-sm p-6 rounded-lg border border-green-500/30">
+                        <div class="text-3xl md:text-4xl font-bold text-green-300 mb-2" data-counter data-start="0" data-end="10000" data-duration="2000">0</div>
+                        <p class="text-green-100 font-medium">Lives Impacted</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2" data-aos="fade-up" data-aos-delay="400">
+                <a href="#mission" class="text-green-300 hover:text-green-100 transition duration-300">
+                    <svg class="w-6 h-6 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- Mission Section -->
+        <section id="mission" class="py-16">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div data-aos="fade-right">
+                        <h2 class="text-3xl font-bold text-gray-800 mb-6">Our Mission</h2>
+                        <p class="text-gray-600 mb-4">CORWADO is dedicated to empowering rural women through sustainable agribusiness development, creating opportunities for economic growth and community transformation.</p>
+                        <p class="text-gray-600">We believe in the power of women to drive positive change in their communities through agriculture and entrepreneurship.</p>
+                    </div>
+                    <div class="bg-green-100 p-8 rounded-lg" data-aos="fade-left">
+                        <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2313&q=80" alt="Women in Agricultural Training" class="rounded-lg shadow-lg mb-6">
+                        <h3 class="text-2xl font-semibold text-green-700 mb-4">Our Impact</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Empowering rural women through agricultural training</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Creating sustainable livelihoods through agribusiness</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Building resilient rural communities</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programs Section -->
+        <section class="bg-gray-100 py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-12" data-aos="fade-up">Our Programs</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://images.unsplash.com/photo-1615811361523-6bd03d7748e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80" alt="Agricultural Training" class="rounded-lg mb-4 h-48 w-full object-cover">
+                        <h3 class="text-xl font-semibold text-green-700 mb-4">Agricultural Training</h3>
+                        <p class="text-gray-600">Comprehensive training programs in modern agricultural techniques and sustainable farming practices.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://images.unsplash.com/photo-1590682680695-43b964a3ae17?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80" alt="Business Development" class="rounded-lg mb-4 h-48 w-full object-cover">
+                        <h3 class="text-xl font-semibold text-green-700 mb-4">Business Development</h3>
+                        <p class="text-gray-600">Supporting women entrepreneurs in developing and scaling their agribusiness ventures.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300" data-aos="fade-up" data-aos-delay="300">
+                        <img src="https://images.unsplash.com/photo-1591628001888-76cc02e0c276?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80" alt="Community Outreach" class="rounded-lg mb-4 h-48 w-full object-cover">
+                        <h3 class="text-xl font-semibold text-green-700 mb-4">Community Outreach</h3>
+                        <p class="text-gray-600">Engaging with local communities to promote sustainable agricultural practices and women's empowerment.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-12" data-aos="fade-up">Success Stories</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-md" data-aos="fade-right">
+                        <div class="flex items-center mb-4">
+                            <img src="https://images.unsplash.com/photo-1594708767771-a7502209ff51?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80" alt="Testimonial" class="w-16 h-16 rounded-full object-cover mr-4">
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Sarah Johnson</h4>
+                                <p class="text-green-600">Agricultural Entrepreneur</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">"CORWADO's training program transformed my farming business. I've doubled my yield and now employ other women in my community."</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md" data-aos="fade-left">
+                        <div class="flex items-center mb-4">
+                            <img src="https://images.unsplash.com/photo-1595273670150-bd0c3c392e46?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80" alt="Testimonial" class="w-16 h-16 rounded-full object-cover mr-4">
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Mary Okello</h4>
+                                <p class="text-green-600">Community Leader</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">"The support from CORWADO has helped our community establish sustainable farming practices and improve our livelihoods."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Statistics -->
+        <section class="py-16 bg-green-900 text-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Our Impact</h2>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                        <div class="text-4xl font-bold mb-2" data-counter data-start="0" data-end="5000" data-duration="2000">0</div>
+                        <p class="text-green-100">Women Trained</p>
+                    </div>
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                        <div class="text-4xl font-bold mb-2" data-counter data-start="0" data-end="20" data-duration="2000">0</div>
+                        <p class="text-green-100">Communities Reached</p>
+                    </div>
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                        <div class="text-4xl font-bold mb-2" data-counter data-start="0" data-end="75" data-duration="2000">0</div>
+                        <p class="text-green-100">Income Increase</p>
+                    </div>
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="400">
+                        <div class="text-4xl font-bold mb-2" data-counter data-start="0" data-end="1000" data-duration="2000">0</div>
+                        <p class="text-green-100">Businesses Started</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer will be loaded here -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Load footer
+        fetch('components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Hero Slider
+        document.addEventListener('DOMContentLoaded', function() {
+            const slider = document.querySelector('.hero-slider');
+            const slides = slider.querySelectorAll('div');
+            const dots = document.querySelectorAll('.slider-dot');
+            let currentSlide = 0;
+            let slideInterval;
+
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    slide.style.opacity = i === index ? '1' : '0';
+                });
+                dots.forEach((dot, i) => {
+                    dot.classList.toggle('active', i === index);
+                });
+            }
+
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % slides.length;
+                showSlide(currentSlide);
+            }
+
+            function startSlider() {
+                slideInterval = setInterval(nextSlide, 5000);
+            }
+
+            function stopSlider() {
+                clearInterval(slideInterval);
+            }
+
+            // Add click handlers for dots
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    currentSlide = index;
+                    showSlide(currentSlide);
+                    stopSlider();
+                    startSlider();
+                });
+            });
+
+            // Start the slider
+            startSlider();
+
+            // Pause slider on hover
+            slider.addEventListener('mouseenter', stopSlider);
+            slider.addEventListener('mouseleave', startSlider);
+        });
+    </script>
+</body>
+</html> 
