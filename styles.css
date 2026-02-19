@@ -50,3 +50,20 @@ h1, h2, h3, h4, h5, h6,
     display: none !important;
   }
 }
+
+/* Partners auto-sliding strip */
+.partners-slide {
+  animation: partners-slide 30s linear infinite;
+  width: max-content;
+}
+.partners-slide:hover {
+  animation-play-state: paused;
+}
+@keyframes partners-slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
