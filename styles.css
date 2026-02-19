@@ -1,0 +1,52 @@
+/* Google Sans Flex = body/UI, Lora = headings (fonts loaded via link in each page) */
+body {
+  font-family: 'Google Sans Flex', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+.font-heading {
+  font-family: 'Lora', serif;
+}
+
+/* Mobile menu: force visible when open */
+#mobile-menu {
+  display: none;
+  position: relative;
+  z-index: 60;
+  min-height: 200px;
+  padding: 1rem 0 1.5rem;
+  background: #fff;
+  border-top: 1px solid #e5e7eb;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+#mobile-menu.mobile-menu-open {
+  display: block !important;
+}
+#mobile-menu a {
+  display: block !important;
+  padding: 0.75rem 0.25rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #374151 !important;
+  text-decoration: none;
+  border-bottom: 1px solid #f3f4f6;
+}
+#mobile-menu a:last-child {
+  border-bottom: none;
+}
+#mobile-menu a:hover {
+  color: #15803d !important;
+}
+#mobile-menu a.bg-green-700 {
+  color: #fff !important;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  margin-top: 0.5rem;
+  border-radius: 9999px;
+}
+@media (min-width: 768px) {
+  #mobile-menu,
+  #mobile-menu.mobile-menu-open {
+    display: none !important;
+  }
+}
