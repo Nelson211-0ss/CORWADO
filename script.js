@@ -9,24 +9,46 @@ async function loadComponent(componentName) {
     }
 }
 
-// Initialize header UI (mobile menu + scroll) after header HTML is injected
-function initHeader() {
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const iconOpen = document.getElementById('mobile-menu-icon-open');
-    const iconClose = document.getElementById('mobile-menu-icon-close');
+// Hamburger: bind directly to button and menu (header is now in the HTML, so they exist on load)
+function setupMobileMenu() {
+    var btn = document.getElementById('mobile-menu-button');
+    var menu = document.getElementById('mobile-menu');
+    if (!btn || !menu) return;
 
-    if (mobileMenuButton && mobileMenu) {
-        mobileMenuButton.addEventListener('click', () => {
-            const wasClosed = mobileMenu.classList.contains('hidden');
-            mobileMenu.classList.toggle('hidden');
-            const isOpen = wasClosed;
-            mobileMenuButton.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-            if (iconOpen) iconOpen.classList.toggle('hidden', isOpen);
-            if (iconClose) iconClose.classList.toggle('hidden', !isOpen);
-        });
+    var iconOpen = document.getElementById('mobile-menu-icon-open');
+    var iconClose = document.getElementById('mobile-menu-icon-close');
+
+    function setMenuOpen(open) {
+        if (open) {
+            menu.classList.add('mobile-menu-open');
+            menu.setAttribute('aria-hidden', 'false');
+            btn.setAttribute('aria-expanded', 'true');
+            if (iconOpen) iconOpen.classList.add('hidden');
+            if (iconClose) iconClose.classList.remove('hidden');
+        } else {
+            menu.classList.remove('mobile-menu-open');
+            menu.setAttribute('aria-hidden', 'true');
+            btn.setAttribute('aria-expanded', 'false');
+            if (iconOpen) iconOpen.classList.remove('hidden');
+            if (iconClose) iconClose.classList.add('hidden');
+        }
     }
 
+    btn.addEventListener('click', function () {
+        setMenuOpen(!menu.classList.contains('mobile-menu-open'));
+    });
+
+    menu.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', function () { setMenuOpen(false); });
+    });
+
+    window.addEventListener('resize', function () {
+        if (window.matchMedia('(min-width: 768px)').matches) setMenuOpen(false);
+    });
+}
+
+// Initialize header UI (scroll behavior) after header HTML is injected
+function initHeader() {
     const header = document.getElementById('main-header');
     if (!header) return;
     let lastScroll = 0;
@@ -46,9 +68,10 @@ function initHeader() {
     });
 }
 
-// Load components when the page loads
-document.addEventListener('DOMContentLoaded', () => {
-    loadComponent('header').then(initHeader);
+// Load components when the page loads (header is inlined in HTML; only footer is fetched)
+document.addEventListener('DOMContentLoaded', function () {
+    setupMobileMenu();
+    initHeader();
     loadComponent('footer');
 
     // Smooth scroll for anchor links
