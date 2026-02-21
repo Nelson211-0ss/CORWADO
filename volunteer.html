@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer - CORWADO</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="script.js" defer></script>
+</head>
+<body class="bg-gray-50">
+    <header class="bg-white shadow-md fixed w-full top-0 z-50 transition-all duration-300" id="main-header">
+        <nav class="container mx-auto px-4 py-4 flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-6">
+            <div class="flex items-center justify-between w-full min-h-[2.5rem]">
+                <a href="index.html" class="text-2xl font-bold text-green-700 hover:text-green-600 transition duration-300 shrink-0">CORWADO</a>
+                <div class="hidden md:flex md:items-center md:gap-8">
+                    <a href="index.html" class="text-gray-600 hover:text-green-700 transition duration-300 py-1">Home</a>
+                    <a href="about.html" class="text-gray-600 hover:text-green-700 transition duration-300 py-1">About Us</a>
+                    <a href="programs.html" class="text-gray-600 hover:text-green-700 transition duration-300 py-1">Programs</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-green-700 transition duration-300 py-1">Contact</a>
+                    <a href="volunteer.html" class="bg-green-700 text-white px-6 py-2 rounded-full hover:bg-green-600 transition duration-300 shrink-0">Volunteer</a>
+                </div>
+                <button id="mobile-menu-button" type="button" class="md:hidden p-2 -m-2 text-gray-600 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-500 rounded" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu">
+                    <svg id="mobile-menu-icon-open" class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                    <svg id="mobile-menu-icon-close" class="h-6 w-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <div id="mobile-menu" class="mobile-nav md:hidden mt-4 pb-4 border-t border-gray-200 pt-4" role="menu" aria-hidden="true">
+                <div class="flex flex-col space-y-4" role="none">
+                    <a href="index.html" class="text-gray-600 hover:text-green-700 transition duration-300">Home</a>
+                    <a href="about.html" class="text-gray-600 hover:text-green-700 transition duration-300">About Us</a>
+                    <a href="programs.html" class="text-gray-600 hover:text-green-700 transition duration-300">Programs</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-green-700 transition duration-300">Contact</a>
+                    <a href="volunteer.html" class="bg-green-700 text-white px-6 py-2 rounded-full hover:bg-green-600 transition duration-300 text-center">Volunteer</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-16">
+        <!-- Hero Section -->
+        <section class="relative py-24 bg-green-900 text-white overflow-hidden">
+            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80')] bg-cover bg-center opacity-20"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-green-900/95 via-green-800/90 to-green-700/95"></div>
+            <div class="container mx-auto px-4 relative z-10">
+                <div class="max-w-3xl mx-auto text-center">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6" data-aos="fade-up">Volunteer with CORWADO</h1>
+                    <p class="text-xl text-green-100" data-aos="fade-up" data-aos-delay="100">Join us in empowering rural women and building resilient communities through sustainable agribusiness.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Volunteer -->
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-12" data-aos="fade-up">Why Volunteer With Us</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 border border-gray-100 text-center" data-aos="fade-up" data-aos-delay="50">
+                        <div class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-7 h-7 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Make a Real Impact</h3>
+                        <p class="text-gray-600">Support women-led agribusiness and help communities achieve food security and economic resilience.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 border border-gray-100 text-center" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-7 h-7 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Join a Community</h3>
+                        <p class="text-gray-600">Work alongside local staff, partners, and other volunteers who share your commitment to rural development.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 border border-gray-100 text-center" data-aos="fade-up" data-aos-delay="150">
+                        <div class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-7 h-7 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Grow Your Skills</h3>
+                        <p class="text-gray-600">Gain experience in agriculture, WASH, livelihoods, and women’s empowerment in a real-world setting.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Volunteer Opportunities -->
+        <section class="py-16 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-4" data-aos="fade-up">Volunteer Opportunities</h2>
+                <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12" data-aos="fade-up">Choose how you’d like to contribute. We welcome both field and remote volunteers.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 border border-gray-100" data-aos="fade-up" data-aos-delay="50">
+                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4 text-green-600">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Agriculture & Field</h3>
+                        <p class="text-gray-600 text-sm">Support farming demonstrations, seed distribution, and sustainable agriculture training in communities.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 border border-gray-100" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4 text-green-600">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Training & Mentoring</h3>
+                        <p class="text-gray-600 text-sm">Deliver workshops on business skills, financial literacy, or technical topics relevant to our programs.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 border border-gray-100" data-aos="fade-up" data-aos-delay="150">
+                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4 text-green-600">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Community Outreach</h3>
+                        <p class="text-gray-600 text-sm">Help with WASH awareness, market linkages, and community mobilization in rural areas.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 border border-gray-100" data-aos="fade-up" data-aos-delay="200">
+                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4 text-green-600">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Remote / Skills-Based</h3>
+                        <p class="text-gray-600 text-sm">Contribute in communications, fundraising, data, or project support from wherever you are.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-12" data-aos="fade-up">How It Works</h2>
+                <div class="max-w-3xl mx-auto space-y-8">
+                    <div class="flex gap-4 items-start" data-aos="fade-right">
+                        <span class="flex-shrink-0 w-10 h-10 bg-green-700 text-white rounded-full flex items-center justify-center font-bold">1</span>
+                        <div>
+                            <h3 class="font-semibold text-gray-800 mb-1">Fill out the form</h3>
+                            <p class="text-gray-600">Tell us about yourself, your skills, and how you’d like to volunteer.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start" data-aos="fade-right" data-aos-delay="100">
+                        <span class="flex-shrink-0 w-10 h-10 bg-green-700 text-white rounded-full flex items-center justify-center font-bold">2</span>
+                        <div>
+                            <h3 class="font-semibold text-gray-800 mb-1">We get in touch</h3>
+                            <p class="text-gray-600">Our team will review your application and contact you to discuss next steps.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start" data-aos="fade-right" data-aos-delay="200">
+                        <span class="flex-shrink-0 w-10 h-10 bg-green-700 text-white rounded-full flex items-center justify-center font-bold">3</span>
+                        <div>
+                            <h3 class="font-semibold text-gray-800 mb-1">Start contributing</h3>
+                            <p class="text-gray-600">Once matched with an opportunity, you’ll receive orientation and begin your volunteer role.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Volunteer Application Form -->
+        <section id="volunteer-form" class="py-16 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <div class="max-w-2xl mx-auto">
+                    <h2 class="text-3xl font-bold text-center text-gray-800 mb-2" data-aos="fade-up">Apply to Volunteer</h2>
+                    <p class="text-center text-gray-600 mb-10" data-aos="fade-up">Complete the form below and we’ll get back to you as soon as we can.</p>
+                    <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100" data-aos="fade-up">
+                        <form class="space-y-6" id="volunteer-application-form">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="vol-name" class="block text-gray-700 font-medium mb-2">Full Name <span class="text-green-600">*</span></label>
+                                    <input type="text" id="vol-name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="Your name">
+                                </div>
+                                <div>
+                                    <label for="vol-email" class="block text-gray-700 font-medium mb-2">Email <span class="text-green-600">*</span></label>
+                                    <input type="email" id="vol-email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="you@example.com">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="vol-phone" class="block text-gray-700 font-medium mb-2">Phone</label>
+                                <input type="tel" id="vol-phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="+211 ...">
+                            </div>
+                            <div>
+                                <label for="vol-interest" class="block text-gray-700 font-medium mb-2">Area of Interest <span class="text-green-600">*</span></label>
+                                <select id="vol-interest" name="interest" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent">
+                                    <option value="">Select an area</option>
+                                    <option value="agriculture">Agriculture & Field</option>
+                                    <option value="training">Training & Mentoring</option>
+                                    <option value="outreach">Community Outreach</option>
+                                    <option value="remote">Remote / Skills-Based</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="vol-availability" class="block text-gray-700 font-medium mb-2">Availability</label>
+                                <select id="vol-availability" name="availability" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent">
+                                    <option value="">Select</option>
+                                    <option value="full-time">Full-time (on-site)</option>
+                                    <option value="part-time">Part-time</option>
+                                    <option value="short-term">Short-term / project-based</option>
+                                    <option value="remote">Remote only</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="vol-message" class="block text-gray-700 font-medium mb-2">Tell us about yourself & why you want to volunteer</label>
+                                <textarea id="vol-message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="Skills, experience, and what you hope to contribute..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-green-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition duration-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">Submit Application</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+        document.getElementById('volunteer-application-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Thank you for your interest in volunteering with CORWADO. We will be in touch soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
